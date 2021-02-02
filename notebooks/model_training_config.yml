@@ -2,8 +2,8 @@ general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
    on_colab: False
-   presaved: True # switch to determine whether to train model or load saved model
-   savemodel: False # switch to determine whether to save model
+   presaved: False # switch to determine whether to train model or load saved model
+   savemodel: True # switch to determine whether to save model
    picklemodel: True # switch for code to allow pickling of Keras model
    save_model_plot: False
    tensorboard_callback: False
@@ -27,12 +27,12 @@ files:
    saved_model_modifier: January312021
 tech_list:
    - 'CROX'
-   - 'SHAK'
-   - 'KWR'
+#   - 'SHAK'
+#   - 'KWR'
 company_dict:
    CROX: Crocs
-   SHAK: Shake Shack
-   KWR: Quaker Chemical Corp.
+#   SHAK: Shake Shack
+#   KWR: Quaker Chemical Corp.
 test_parms:
    testproportion: 0.2 # proportion of data reserved for test set
    trainproportion: 0.8 # proportion of non-test data dedicated to training (vs. validation)
