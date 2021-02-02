@@ -2,7 +2,7 @@ general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
    on_colab: False
-   presaved: False # switch to determine whether to train model or load saved model
+   presaved: True # switch to determine whether to train model or load saved model
    savemodel: False # switch to determine whether to save model
    picklemodel: True # switch for code to allow pickling of Keras model
    save_model_plot: False
@@ -24,7 +24,7 @@ general:
    master_start: '2018-01-01'
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
-   saved_model_modifier: January272021
+   saved_model_modifier: January312021
 tech_list:
    - 'CROX'
    - 'SHAK'
