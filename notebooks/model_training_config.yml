@@ -3,7 +3,7 @@ general:
    includetext: True # switch to determine whether text fields are included in model
    on_colab: False
    presaved: False # switch to determine whether to train model or load saved model
-   savemodel: True # switch to determine whether to save model
+   savemodel: False # switch to determine whether to save model
    picklemodel: True # switch for code to allow pickling of Keras model
    save_model_plot: False
    tensorboard_callback: False
@@ -25,7 +25,10 @@ general:
    ust_cols: ['2 YR']
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
-   look_back: 60
+   look_back: 3
+   lstm_target: 'Close'
+   feature_list: []
+#   feature_list: ['2 YR']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
