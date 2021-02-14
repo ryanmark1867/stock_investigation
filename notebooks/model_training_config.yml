@@ -25,7 +25,7 @@ general:
    ust_cols: ['2 YR']
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
-   look_back: 3
+   look_back: 60
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
