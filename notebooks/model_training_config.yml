@@ -27,8 +27,8 @@ general:
    quandl_token: "uCghYBw8CtpUvWct_W8c"
    look_back: 3
    lstm_target: 'Close'
-   feature_list: []
-#   feature_list: ['2 YR']
+#   feature_list: []
+   feature_list: ['2 YR','30 YR']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
