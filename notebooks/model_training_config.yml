@@ -25,7 +25,8 @@ general:
    ust_cols: ['2 YR']
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
-   look_back: 3
+   look_back: 3 # number of days back used to predict subsequent day being predicted
+   look_ahead: 14 # gap in days between last of training data and first day being predicted
    lstm_target: 'Close'
 #   feature_list: []
    feature_list: ['2 YR','30 YR']
