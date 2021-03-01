@@ -26,8 +26,9 @@ general:
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
    look_back: 3 # number of days back used to predict subsequent day being predicted
-   look_ahead: 21 # gap in days between last of training data and first day being predicted
-   lstm_target: 'Close'
+   look_ahead: 7 # gap in days between last of training data and first day being predicted
+   #lstm_target: 'Close'
+   lstm_target: 'Return'
 #   feature_list: []
    feature_list: ['2 YR','30 YR']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
@@ -35,11 +36,11 @@ files:
    saved_model_modifier: January312021
 tech_list:
    - 'CROX'
-#   - 'SHAK'
+   - 'SHAK'
 #   - 'KWR'
 company_dict:
    CROX: Crocs
-#   SHAK: Shake Shack
+   SHAK: Shake Shack
 #   KWR: Quaker Chemical Corp.
 test_parms:
    testproportion: 0.2 # proportion of data reserved for test set
