@@ -31,6 +31,7 @@ general:
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
+#  FULL LIST OF FEATURES: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi']
    feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
