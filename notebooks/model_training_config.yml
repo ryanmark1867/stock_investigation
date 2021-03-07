@@ -28,10 +28,10 @@ general:
    quandl_token: "uCghYBw8CtpUvWct_W8c"
    look_back: 3 # number of days back used to predict subsequent day being predicted
    look_ahead: 7 # gap in days between last of training data and first day being predicted
-   #lstm_target: 'Close'
-   lstm_target: 'Return'
+   #lstm_target: 'Close' # this is the target of the model - the value being predicted
+   lstm_target: 'Close'
 #   feature_list: []
-   feature_list: ['2 YR','30 YR']
+   feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
