@@ -23,7 +23,7 @@ general:
    patience_threshold: 3
    min_max_norm: True # switch to determin whether to use min_max (True) or standardization (False)
    master_start: '2018-01-01'
-   close_threshold: 0.01
+   close_threshold: 0.1
    ust_cols: ['2 YR']
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
