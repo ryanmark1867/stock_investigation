@@ -27,6 +27,7 @@ general:
    ust_cols: ['2 YR']
    years_window: 2
    quandl_token: "uCghYBw8CtpUvWct_W8c"
+   finnhumb_key: "c16hj0f48v6ppg7erf7g"
    look_back: 3 # number of days back used to predict subsequent day being predicted
    look_ahead: 7 # gap in days between last of training data and first day being predicted
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
