@@ -2,6 +2,7 @@ general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
    on_colab: False
+   debug_on: False
    presaved: False # switch to determine whether to train model or load saved model
    savemodel: False # switch to determine whether to save model
    picklemodel: True # switch for code to allow pickling of Keras model
@@ -35,18 +36,20 @@ general:
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
-#  FULL LIST OF FEATURES: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi']
-   feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi']
+#  FULL LIST OF FEATURES: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close']
+   feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close']
 #    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
 tech_list:
-   - 'CROX'
+   - 'BLK'
    - 'SHAK'
+   - 'CAT'
 #   - 'KWR'
 company_dict:
-   CROX: Crocs
+   BLK: Blackrock
+   CAT: Caterpillar
    SHAK: Shake Shack
 #   KWR: Quaker Chemical Corp.
 test_parms:
