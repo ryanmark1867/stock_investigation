@@ -42,16 +42,15 @@ general:
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
+#tech_list:
+#   - 'BLK'
+#   - 'SHAK'
+#   - 'CAT'
 tech_list:
-   - 'BLK'
-   - 'SHAK'
-   - 'CAT'
+- 'ARE'
+- 'ARNC'
+- 'ASML'
 #   - 'KWR'
-company_dict:
-   BLK: Blackrock
-   CAT: Caterpillar
-   SHAK: Shake Shack
-#   KWR: Quaker Chemical Corp.
 test_parms:
    testproportion: 0.2 # proportion of data reserved for test set
    trainproportion: 0.8 # proportion of non-test data dedicated to training (vs. validation)
