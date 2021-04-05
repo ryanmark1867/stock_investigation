@@ -28,7 +28,7 @@ general:
    master_end: '2021-04-01'
    repeatable_run: False # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
-   training_proportion: 0.5 # proportion of timeframe to use to train the model
+   training_proportion: 0.8 # proportion of timeframe to use to train the model
    close_threshold: 0.01
    report_round: 4
    ust_cols: ['2 YR']
@@ -36,7 +36,8 @@ general:
    finnhumb_key: "c16hj0f48v6ppg7erf7g"
    eod_token: "OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX"
    look_back: 3 # number of days back used to predict subsequent day being predicted
-   look_ahead: 7 # gap in days between last of training data and first day being predicted
+   look_ahead: 60 # gap in days between last of training data and first day being predicted
+   look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
