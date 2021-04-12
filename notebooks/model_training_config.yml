@@ -23,9 +23,9 @@ general:
    one_weight_offset: 0 # additional offset to one_weight
    patience_threshold: 3
    min_max_norm: True # switch to determine whether to use min_max (True) or standardization (False)
-   master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
-   master_start: '2015-01-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
-   master_end: '2021-01-01'
+   master_date_mode: False # switch to determine whether start and end of timeframe controlled by master_start and master_end
+   master_start: '2010-01-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
+   master_end: '2016-01-01'
    repeatable_run: False # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
    training_proportion: 0.8 # proportion of timeframe to use to train the model
@@ -35,25 +35,24 @@ general:
    quandl_token: "uCghYBw8CtpUvWct_W8c"
    finnhumb_key: "c16hj0f48v6ppg7erf7g"
    eod_token: "OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX"
-   look_back: 3 # number of days back used to predict subsequent day being predicted
+   look_back: 20 # number of days back used to predict subsequent day being predicted
    look_ahead: 60 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
+   multi_parm_run: True # switch to determine whether to read multi_parm_file to get sets of parameters
+   # if multi_parm_run = True, read multi_parm_file and for each row in it, do an iteration with the parms set from that row of the file
+   # if multi_parm_run = False, just do one iteration using parms from the config file
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
 #  FULL LIST OF FEATURES: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close']
    feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close']
-#    - 'SHAK'    SHAK: Shake Shack    - 'AMZN'    AMZN: AMAZON
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
-#tech_list:
-#   - 'BLK'
-#   - 'SHAK'
-#   - 'CAT'
+   multi_parm_file: test_multi_parm.csv
 tech_list:
 - 'GE'
-- 'ARNC'
+#- 'ARNC'
 # - 'ASML'
 #   - 'KWR'
 hyperparameters:
