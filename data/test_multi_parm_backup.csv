@@ -1,0 +1,4 @@
+run_id,master_date_mode,master_start,master_end,repeatable_run,years_window,training_proportion,close_threshold,look_back,look_ahead,look_ahead_scale,tech_list
+1,TRUE,2015-01-01','2016-01-01',FALSE,2,0.8,0.01,20,7,0.5,"[IBM, AAPL, MSFT]"
+2,FALSE,'2010-01-01','2016-01-01',FALSE,2,0.8,0.01,20,14,0.5,[GE]
+3,FALSE,'2010-01-01','2016-01-01',FALSE,1,0.8,0.01,20,7,0.5,"[ARNC, ASML]"
