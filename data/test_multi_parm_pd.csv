@@ -1,0 +1,4 @@
+run_id,master_date_mode,master_start,master_end,repeatable_run,years_window,training_proportion,close_threshold,look_back,look_ahead,look_ahead_scale,tech_list
+1,TRUE,2016-01-01',2020-01-01',TRUE,2,0.8,0.01,90,60,0.5,[PG]
+2,TRUE,2015-01-01',2020-01-01',TRUE,2,0.8,0.01,90,60,0.5,[PG]
+3,TRUE,2014-01-01',2020-01-01',TRUE,2,0.8,0.01,90,60,0.5,[PG]
