@@ -45,8 +45,9 @@ general:
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
-#  FULL LIST OF FEATURES: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
-   feature_list: ['2 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
+#  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+# MAY 6 pre list: ['2 YR','10 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
+   feature_list: ['2 YR','30 YR', 'Sector_Close','VIX', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
