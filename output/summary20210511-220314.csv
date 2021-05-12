@@ -1,0 +1,7 @@
+run_id,master_date_mode,master_start,master_end,repeatable_run,years_window,training_proportion,close_threshold,look_back,look_ahead,look_ahead_scale,tech_list,ticker,total deviation,avg deviation,max deviation,min deviation,proportion good days
+1,True,2015-01-01','2016-01-01',False,2,0.8,0.01,20,7,0.5,"[IBM, AAPL, MSFT]",IBM,6.9641,22.3156,0.1994,0.1062,0.0%
+1,True,2015-01-01','2016-01-01',False,2,0.8,0.01,20,7,0.5,"[IBM, AAPL, MSFT]",AAPL,2.3351,1.5613,0.1215,0.0014,2.0%
+1,True,2015-01-01','2016-01-01',False,2,0.8,0.01,20,7,0.5,"[IBM, AAPL, MSFT]",MSFT,6.0022,7.6245,0.1656,0.1139,0.0%
+2,False,'2010-01-01','2016-01-01',False,2,0.8,0.01,20,14,0.5,[GE],GE,11.7449,1.7199,0.3329,0.0131,0.0%
+3,False,'2010-01-01','2016-01-01',False,1,0.8,0.01,20,7,0.5,"[ARNC, ASML]",ARNC,4.2258,2.7921,0.2125,0.0,6.0%
+3,False,'2010-01-01','2016-01-01',False,1,0.8,0.01,20,7,0.5,"[ARNC, ASML]",ASML,2.8799,41.4074,0.1257,0.0004,4.0%
