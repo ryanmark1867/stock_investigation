@@ -1,3 +1,0 @@
-ticker,feature_list,total deviation,avg deviation,max deviation,min deviation,proportion good days
-GE,"['Close', '2 YR', '30 YR', 'Sector_Close', 'VIX', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment', 'public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']",24.3206,5.3507,0.4872,0.3317,0.0%
-IBM,"['Close', '2 YR', '30 YR', 'Sector_Close', 'VIX', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment', 'public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']",8.1012,18.0206,0.2342,0.0431,0.0%
