@@ -24,8 +24,8 @@ general:
    patience_threshold: 3
    min_max_norm: True # switch to determine whether to use min_max (True) or standardization (False)
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
-   master_start: '2007-10-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
-   master_end: '2020-09-01'
+   master_start: '2002-10-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
+   master_end: '2021-04-01'
    repeatable_run: False # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
    max_years_back: 20 # maximum years back from present year that the timeframe can be defined for
@@ -35,19 +35,20 @@ general:
    ust_cols: ['2 YR']
    quandl_token: "uCghYBw8CtpUvWct_W8c"
    finnhumb_key: "c16hj0f48v6ppg7erf7g"
+   rapidai_key: "d747b1fadamsh1d7ce49966b2dffp161862jsnab3680125c9e"
    eod_token: "OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX"
    look_back: 20 # number of days back used to predict subsequent day being predicted
    look_ahead: 40 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
-   multi_parm_run: True # switch to determine whether to read multi_parm_file to get sets of parameters
+   multi_parm_run: False # switch to determine whether to read multi_parm_file to get sets of parameters
    # if multi_parm_run = True, read multi_parm_file and for each row in it, do an iteration with the parms set from that row of the file
    # if multi_parm_run = False, just do one iteration using parms from the config file
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
    lstm_target: 'Close'
 #   feature_list: []
-#  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX','URTH', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+#  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX','URTH',us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 # MAY 6 pre list: ['2 YR','10 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
-   feature_list: ['2 YR','30 YR', 'VIX','us_dollar_index','personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+   feature_list: ['2 YR','Sector_Close','VIX','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
@@ -58,6 +59,10 @@ tech_list:
 #- 'ARNC'
 # - 'ASML'
 #   - 'KWR'
+static_load:
+   static_feature_list: ['gdp', 'cpi', 'unemployment'] # features that are loaded from saved repository
+   static_load_start: '2002-10-01' # start date for the static load
+   static_load_end: '2021-04-01' # end date for the static load
 hyperparameters:
    learning_rate: 0.001
    dropout_rate: 0.0003 #0.003
