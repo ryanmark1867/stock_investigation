@@ -60,7 +60,7 @@ tech_list:
 # - 'ASML'
 #   - 'KWR'
 static_load:
-   static_feature_list: ['gdp', 'cpi', 'unemployment'] # features that are loaded from saved repository
+   static_feature_list: ['gdp', 'cpi', 'oil_price'] # features that are loaded from saved repository
    static_load_start: '2002-10-01' # start date for the static load
    static_load_end: '2021-04-01' # end date for the static load
 hyperparameters:
