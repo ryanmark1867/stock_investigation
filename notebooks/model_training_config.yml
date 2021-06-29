@@ -49,6 +49,19 @@ general:
 #  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX','URTH',us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 # MAY 6 pre list: ['2 YR','10 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
    feature_list: ['2 YR','Sector_Close','VIX','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+# features that can be loaded in an automated way
+   conventional_feature_list: ['us_dollar_index','public_debt','personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','gdp', 'cpi', 'unemployment']
+# quandl keys for conventional features
+conventional_feature_keys:
+   us_dollar_index: "FRED/TWEXBANL"
+   public_debt: "FRED/GFDEGDQ188S"
+   personal_sav_rate: "FRED/PSAVERT"
+   oil_price: "FRED/DCOILWTICO"
+   schiller_ratio: "MULTPL/SHILLER_PE_RATIO_MONTH"
+   consumer_sentiment: "UMICH/SOC1"
+   gdp: "FRED/GDP"
+   cpi: "FRED/CPIAUCSL"
+   unemployment: "FRED/UNRATE"    
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
