@@ -1,0 +1,32 @@
+# config file for doing batch loads of close values and saving to CSV files
+general:
+   verboseout: False
+   on_colab: False
+   debug_on: False
+   target_col: 'price'
+   master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
+   master_start: '1991-01-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
+   master_end: '2021-08-06'
+   ust_cols: ['2 YR']
+   marketstack_key : '619472d1ffefe4e9c494e77be6266dae'
+   feature_list: ['2 YR','Sector_Close','VIX','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+# features that can be loaded in an automated way
+   conventional_feature_list: ['us_dollar_index','public_debt','personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','gdp', 'cpi', 'unemployment']
+# quandl keys for conventional features
+ 
+files:
+   batch_ticker_list_file: batch_ticker_retry_vix_urth.csv
+   batch_output_prefix: 'batch_close_output'
+   multi_parm_file: test_multi_parm.csv
+static_load:
+   static_feature_list: ['gdp', 'cpi', 'oil_price'] # features that are loaded from saved repository
+   static_load_start: '2002-10-01' # start date for the static load
+   static_load_end: '2021-04-01' # end date for the static load
+hyperparameters:
+   learning_rate: 0.001
+   dropout_rate: 0.0003 #0.003
+   l2_lambda: 0.0003 #7.5
+   loss_func: "binary_crossentropy"
+   output_activation: "hard_sigmoid" # set to "linear" if target is continuous
+   batch_size: 1000
+   epochs: 50

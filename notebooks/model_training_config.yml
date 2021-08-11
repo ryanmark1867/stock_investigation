@@ -24,8 +24,8 @@ general:
    patience_threshold: 3
    min_max_norm: True # switch to determine whether to use min_max (True) or standardization (False)
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
-   master_start: '2002-10-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
-   master_end: '2021-04-01'
+   master_start: '2020-08-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
+   master_end: '2021-08-10'
    repeatable_run: False # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
    max_years_back: 20 # maximum years back from present year that the timeframe can be defined for
@@ -38,6 +38,8 @@ general:
    rapidai_key: "d747b1fadamsh1d7ce49966b2dffp161862jsnab3680125c9e"
    eod_token: "OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX"
    fmpcloud_key: "8b8f188c549c0399d2679fbf974a0a9f"
+   eod_historical_token: "6057885c018fd9.09873427"
+   marketstack_key : '619472d1ffefe4e9c494e77be6266dae'
    look_back: 20 # number of days back used to predict subsequent day being predicted
    look_ahead: 40 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
@@ -49,7 +51,8 @@ general:
 #   feature_list: []
 #  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX','URTH',us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 # MAY 6 pre list: ['2 YR','10 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
-   feature_list: ['2 YR','Sector_Close','VIX','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
+# NOTE: post Aug 10, URTH is just treated as another ticker and VIX is removed
+   feature_list: ['2 YR','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 # features that can be loaded in an automated way
    conventional_feature_list: ['us_dollar_index','public_debt','personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','gdp', 'cpi', 'unemployment']
 # quandl keys for conventional features
