@@ -6,7 +6,7 @@ general:
    target_col: 'price'
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
    master_start: '1991-01-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
-   master_end: '2021-08-06'
+   master_end: '2021-08-27'
    ust_cols: ['2 YR']
    marketstack_key : '619472d1ffefe4e9c494e77be6266dae'
    feature_list: ['2 YR','Sector_Close','VIX','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
@@ -15,7 +15,7 @@ general:
 # quandl keys for conventional features
  
 files:
-   batch_ticker_list_file: batch_ticker_retry_vix_urth.csv
+   batch_ticker_list_file: batch_ticker_sector_update_aug25.csv
    batch_output_prefix: 'batch_close_output'
    multi_parm_file: test_multi_parm.csv
 static_load:

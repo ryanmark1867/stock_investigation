@@ -1,7 +1,7 @@
 general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
-   on_colab: False
+   on_colab: True
    debug_on: False
    presaved: False # switch to determine whether to train model or load saved model
    savemodel: False # switch to determine whether to save model
@@ -26,7 +26,7 @@ general:
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
    master_start: '2020-08-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
    master_end: '2021-08-10'
-   repeatable_run: False # switch to control whether runs are repeated identically
+   repeatable_run: True # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
    max_years_back: 20 # maximum years back from present year that the timeframe can be defined for
    training_proportion: 0.8 # proportion of timeframe to use to train the model
@@ -44,7 +44,7 @@ general:
    look_ahead: 40 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
    xgboost_solo: True
-   multi_parm_run: False # switch to determine whether to read multi_parm_file to get sets of parameters
+   multi_parm_run: True # switch to determine whether to read multi_parm_file to get sets of parameters
    # if multi_parm_run = True, read multi_parm_file and for each row in it, do an iteration with the parms set from that row of the file
    # if multi_parm_run = False, just do one iteration using parms from the config file
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
@@ -73,7 +73,7 @@ conventional_feature_keys:
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
-   multi_parm_file: test_multi_parm.csv
+   multi_parm_file: test_multi_parm_luc_aug28.csv
 tech_list:
 - 'GE'
 - 'IBM'
