@@ -2,7 +2,7 @@ general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
    on_colab: False
-   debug_on: False
+   debug_on: True
    presaved: False # switch to determine whether to train model or load saved model
    savemodel: False # switch to determine whether to save model
    picklemodel: True # switch for code to allow pickling of Keras model
@@ -44,7 +44,7 @@ general:
    look_ahead: 40 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
    xgboost_solo: True
-   multi_parm_run: False # switch to determine whether to read multi_parm_file to get sets of parameters
+   multi_parm_run: True # switch to determine whether to read multi_parm_file to get sets of parameters
    # if multi_parm_run = True, read multi_parm_file and for each row in it, do an iteration with the parms set from that row of the file
    # if multi_parm_run = False, just do one iteration using parms from the config file
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
@@ -53,9 +53,10 @@ general:
 #  FULL LIST OF FEATURES: ['2 YR','30 YR', 'Sector_Close','VIX','URTH',us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment']
 # MAY 6 pre list: ['2 YR','10 YR','30 YR','Bullish','Bearish','unemployment','gdp','cpi','Sector_Close','VIX']
 # NOTE: post Aug 10, URTH is just treated as another ticker and VIX is removed
-   feature_list: ['2 YR','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment','non_farm','m2_money','st_louis']
+   feature_list: ['2 YR','us_dollar_index', 'personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','public_debt', 'Bullish', 'Bearish', 'gdp', 'cpi', 'unemployment','non_farm','m2_money','st_louis','volume']
 # features that can be loaded in an automated way
    conventional_feature_list: ['us_dollar_index','public_debt','personal_sav_rate', 'oil_price', 'schiller_ratio', 'consumer_sentiment','gdp', 'cpi', 'unemployment', 'non_farm','m2_money','st_louis']
+   ticker_feature_list: ['volume']
 # quandl keys for conventional features
 conventional_feature_keys:
    us_dollar_index: "FRED/TWEXBANL"
@@ -73,7 +74,7 @@ conventional_feature_keys:
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
-   multi_parm_file: test_multi_parm.csv
+   multi_parm_file: test_multi_parm_sep4.csv
 tech_list:
 - 'GE'
 - 'IBM'
