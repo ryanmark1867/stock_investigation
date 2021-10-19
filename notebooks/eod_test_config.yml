@@ -11,7 +11,21 @@ general:
    eod_historical_token: "605766cf49ac93.89487471"
    
 exchange_json_list:
-- 'gspc_clean.json'
+- 'gsptse_2021-10-18.json'
+
+etf_list:
+- 'IYW'
+- 'IYH'
+- 'IYF'
+- 'XLY'
+- 'IYZ'
+- 'IYJ'
+- 'VDC'
+- 'IYE'
+- 'IDU'
+- 'IYR'
+- 'IYM'
+- 'URTH'
 
 # quandl keys for conventional features
 files:
