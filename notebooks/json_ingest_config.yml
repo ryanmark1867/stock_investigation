@@ -1,4 +1,4 @@
-# config for test of EDO API
+# config for JSON fundamentals ingestion
 general:
    verboseout: False
    includetext: True # switch to determine whether text fields are included in model
@@ -54,12 +54,13 @@ etf_list:
 - 'VOO'
 - 'IWV'
 
-# quandl keys for conventional features
+# files and directories
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
    multi_parm_file: test_multi_parm_sep4.csv
-   fundamentals_directory: static_load_fundamentals
+   fundamentals_directory: static_load_fundamentals_gsptse
+#   fundamentals_directory: static_load_fundamentals
    tse_test: "https://drive.google.com/file/d/1lAXY00O_tmsoch1SeisEF-EcYEIRyM3j/view?usp=sharing"
 tech_list:
 - 'GE'
