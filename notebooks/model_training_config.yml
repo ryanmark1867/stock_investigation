@@ -75,6 +75,7 @@ files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
    multi_parm_file: test_multi_parm_sep4.csv
+   json_fundamentals_mockup: json_fundamentals_mockup.csv
 tech_list:
 - 'GE'
 - 'IBM'
