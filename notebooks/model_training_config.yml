@@ -76,10 +76,9 @@ files:
    sector_ticker: sector_ticker.csv
    multi_parm_file: test_multi_parm_sep4.csv
    json_fundamentals_mockup: json_fundamentals_mockup.csv
+   current_fundamentals_directory: fundamentals_gprc
 tech_list:
-- 'GE'
 - 'IBM'
-- 'GOOGL'
 #- 'ARNC'
 # - 'ASML'
 #   - 'KWR'
