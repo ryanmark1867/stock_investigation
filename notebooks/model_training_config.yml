@@ -26,7 +26,7 @@ general:
    min_max_norm: True # switch to determine whether to use min_max (True) or standardization (False)
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
    master_start: '2020-05-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
-   master_end: '2021-08-06'
+   master_end: '2021-05-01'
    repeatable_run: False # switch to control whether runs are repeated identically
    years_window: 2 # if master_date_mode set to False then timeframe is [current date - years_window] -> current date
    max_years_back: 20 # maximum years back from present year that the timeframe can be defined for
