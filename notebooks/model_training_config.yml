@@ -22,7 +22,7 @@ general:
    one_weight: 45.878 # default one_weight
    one_weight_offset: 0 # additional offset to one_weight
    patience_threshold: 3
-   main_fundamentals_switch: False
+   main_fundamentals_switch: True
    min_max_norm: True # switch to determine whether to use min_max (True) or standardization (False)
    master_date_mode: True # switch to determine whether start and end of timeframe controlled by master_start and master_end
    master_start: '2016-05-01' # if master_date_mode set to True, then timeframe is master_start -> master_end
