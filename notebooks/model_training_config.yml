@@ -45,7 +45,7 @@ general:
    look_ahead: 20 # gap in days between last of training data and first day being predicted
    look_ahead_scale: 0.5 # proportion of prediction timeframe to use for lookahead if lookahead > prediction timeframe
    xgboost_solo: True
-   multi_parm_run: False # switch to determine whether to read multi_parm_file to get sets of parameters
+   multi_parm_run: True # switch to determine whether to read multi_parm_file to get sets of parameters
    # if multi_parm_run = True, read multi_parm_file and for each row in it, do an iteration with the parms set from that row of the file
    # if multi_parm_run = False, just do one iteration using parms from the config file
    #lstm_target: 'Close' # this is the target of the model - the value being predicted
@@ -84,7 +84,7 @@ conventional_feature_keys:
 files:
    saved_model_modifier: January312021
    sector_ticker: sector_ticker.csv
-   multi_parm_file: test_multi_parm_sep4.csv
+   multi_parm_file: test_multi_parm_feb10.csv
    json_fundamentals_mockup: json_fundamentals_mockup.csv
    current_fundamentals_directory: fundamentals_gprc
 tech_list:
