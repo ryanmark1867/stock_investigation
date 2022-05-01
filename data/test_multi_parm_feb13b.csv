@@ -1,0 +1,5 @@
+run_id,master_date_mode,master_start,master_end,repeatable_run,years_window,training_proportion,close_threshold,look_back,look_ahead,look_ahead_scale,tech_list
+1,TRUE,2005-10-01',2010-10-01',TRUE,2,0.9,0.02,60,90,0.5,"[DUK, PG]"
+2,TRUE,2006-09-01',2011-09-01',TRUE,2,0.9,0.02,60,90,0.5,"[DUK, PG]"
+3,TRUE,2007-05-01',2012-05-01',TRUE,2,0.9,0.02,60,90,0.5,"[DUK, PG]"
+4,TRUE,2008-12-01',2013-12-01',TRUE,2,0.9,0.02,60,90,0.5,"[DUK, PG]"
